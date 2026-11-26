@@ -1,10 +1,10 @@
 // One-line joke entry for make.fun's "Make the Judge Laugh in One Line" bounty.
-// Judge fit: a stranger gets it on first read (calendar, free time, meeting),
-// the setup flips at the end (the meeting is with me, titled "Explain Yourself"),
-// and the laugh lands on the last words with no explanation needed.
+// Judge fit: a stranger gets it on first read (calendar, free time, scheduled),
+// the setup flips at the end (I am the one scheduled, for "Explain Yourself"),
+// every word earns its place, and the laugh lands on the final words.
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 
-const LINE = "I asked my calendar to protect my free time, and it scheduled a meeting with me titled 'Explain Yourself.'";
+const LINE = "I asked my calendar to protect my free time; it scheduled me for 'Explain Yourself.'";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
